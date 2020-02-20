@@ -1,0 +1,21 @@
+name: HKL's Blog
+description:  Just record things.
+
+#markdown: redcarpet
+#redcarpet:
+#  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+markdown: kramdown
+
+permalink: /:year/:month/:title/
+owner:
+    name: HKL
+
+
+paginate: 7
+paginate_path: "page/:num"
+
+timezone: Asia/Shanghai
+plugins:
+  - jekyll-paginate
+
+

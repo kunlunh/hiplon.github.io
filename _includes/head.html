@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ site.name }} {% if page.title %} &mdash; {{ page.title }} {% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" type="application/atom+xml" title="{{site.name}}" href="{{site.url}}/feed.xml">
+    <!-- Loop and attach page tags from page meta section -->
+    {% if page.tags %}
+    <meta name="keywords" content="{{ page.tags }}">
+    {% else %}
+    <meta name="keywords" content="jekyll">
+    {% endif %}
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{"/assets/css/main.css"}}" />
+	<link href="//lib.sinaapp.com/js/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="//s2.pstatp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+	
+</head>
+

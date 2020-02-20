@@ -1,0 +1,24 @@
+name: Jekyll site CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+        
+    - name: Install upx
+      run: sudo wget http://collection.b0.upaiyun.com/softwares/upx/upx-linux-amd64-v0.2.4 && sudo chmod +x ./upx-linux-amd64-v0.2.4
+      
+    - name: Configure upx
+      run: ./upx-linux-amd64-v0.2.4 login ${{ secrets.upx_service }} ${{ secrets.upx_username }} ${{ secrets.upx_password }}
+    - name: Upload to Upyun
+      run: ./upx-linux-amd64-v0.2.4 sync --delete  "./_site" / -v

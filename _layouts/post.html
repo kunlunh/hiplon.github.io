@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<div class="col-md-12">
+    <div class="page">
+    	<div class="page-title">
+    		{{ page.title }}
+    		<div class="meta">    			
+                {% if site.owner.name %}
+                By {{site.owner.name}},
+                {% endif %}
+    			<time class="timeago" datetime="{{ page.date }}">{{ page.date |  date: "%A %-d %B %Y" }}</time>,
+    			<a href="#comment">
+				评论<i class="fa fa-commenting-o"></i></a>
+				<p>			
+				<span>[
+				  {% for tag in page.tags %}
+					{% capture tag_name %}{{ tag }}{% endcapture %}
+					<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr><i class="fa fa-tag"></i>{{ tag_name }}</nobr></code>&nbsp;</a>
+				  {% endfor %}
+				]</span>
+				</p>	
+    		</div>
+    	</div>
+        <div class="page-content">
+            {{ content }}
+            <!-- Share & Comments -->
+            {% include share.html %}            
+        </div>
+		<link rel="stylesheet" href="/assets/css/markdown.css">
+		{% include highlight.html %}
+		{% include comment.html %}
+    </div>
+</div>
+
+

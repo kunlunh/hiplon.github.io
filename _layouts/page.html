@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="col-md-12">
+    <div class="page">
+    	<div class="page-title">
+    		{{ page.title }}
+    	</div>
+        <div class="page-content">
+            {{ content }}           
+        </div>
+    </div>
+	{% if page.comment == true %}
+	{% include comment.html %}
+	{% endif %}
+</div>
+
+
