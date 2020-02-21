@@ -4,7 +4,8 @@ description:  Just record things.
 #markdown: redcarpet
 #redcarpet:
 #  extensions: ["no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-markdown: kramdown
+#markdown: kramdown
+markdown: CommonMark
 
 permalink: /:year/:month/:title/
 owner:
@@ -14,8 +15,13 @@ owner:
 paginate: 7
 paginate_path: "page/:num"
 
+
 timezone: Asia/Shanghai
 plugins:
   - jekyll-paginate
+  
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
 
 
