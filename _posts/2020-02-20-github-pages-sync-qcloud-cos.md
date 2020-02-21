@@ -33,6 +33,7 @@ tags:
 `.github/workflows/jekyll.yml`
 
 ```bash
+{% raw %}
 name: Jekyll site CI
 
 on: [push]
@@ -47,28 +48,31 @@ jobs:
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v ${{ "{{" }} github.workspace {{ "}}" }}:/srv/jekyll -v ${{ "{{" }} github.workspace {{ "}}" }}/_site:/srv/jekyll/_site \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
     - name: Install coscmd
       run: sudo pip install coscmd
       
     - name: Configure coscmd
       env: 
-        secret_id: ${{ "{{" }} secrets.SecretId {{ "}}" }}
-        secret_key: ${{ "{{" }} secrets.SecretKey {{ "}}" }}
-        bucket: ${{ "{{" }} secrets.BUCKET {{ "}}" }}
+        secret_id: ${{ secrets.SecretId }}
+        secret_key: ${{ secrets.SecretKey }}
+        bucket: ${{ secrets.BUCKET }}
         region: ap-guangzhou
       run: coscmd config -a $secret_id -s $secret_key -b $bucket -r $region
     - name: Upload to Tencent COS
       run: coscmd upload -rs --delete ./_site/ /
+{% endraw %}
 ```
 
 [.github/workflows/jekyll.yml链接](https://github.com/hiplon/hiplon.github.io/blob/master/.github/workflows/jekyll.yml)
 
 ```bash
-secret_id: ${{ "{{" }} secrets.SecretId {{ "}}" }}
-secret_key: ${{ "{{" }} secrets.SecretKey {{ "}}" }}
-bucket: ${{ "{{" }} secrets.BUCKET {{ "}}" }}
+{% raw %}
+secret_id: ${{ secrets.SecretId }}
+secret_key: ${{ secrets.SecretKey }}
+bucket: ${{ secrets.BUCKET }}
+{% endraw %}
 ```
 
 这块就要在仓库的Settings里面配置好就行。
