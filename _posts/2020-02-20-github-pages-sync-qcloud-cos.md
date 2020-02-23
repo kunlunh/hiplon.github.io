@@ -8,9 +8,9 @@ author: HKL
 categories: 
   - 默认分类
 tags: 
-  - Networking
+  - Blog
   - Operating
-  - Coding
+  - CI/CD
 ---
 
 以本站为例，配置Github Pages同步到Qcloud腾讯云对象存储COS

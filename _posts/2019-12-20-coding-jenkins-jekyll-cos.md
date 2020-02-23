@@ -8,9 +8,9 @@ author: HKL
 categories: 
   - 默认分类
 tags: 
-  - Networking
+  - Blog
   - Operating
-  - Coding
+  - CI/CD
 ---
 
 Coding项目通过Jenkins生成jekyll并发布到腾讯云对象存储Qcloud COS
