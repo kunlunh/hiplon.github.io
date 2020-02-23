@@ -10,7 +10,7 @@ categories:
 tags: 
   - Blog
   - Operating
-  - CI/CD
+  - CICD
 ---
 
 以本站为例，配置Github Pages同步到Qcloud腾讯云对象存储COS

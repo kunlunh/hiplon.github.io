@@ -10,7 +10,7 @@ categories:
 tags: 
   - Blog
   - Operating
-  - CI/CD
+  - CICD
 ---
 
 Coding项目通过Jenkins生成jekyll并发布到腾讯云对象存储Qcloud COS
