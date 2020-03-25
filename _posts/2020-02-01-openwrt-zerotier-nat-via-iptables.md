@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zerotier网卡NAT
-slug: openwrt-zerotier-nat
+title: Zerotier网卡NAT via iptables
+slug: openwrt-zerotier-nat-via-iptables
 date: 2020/02/01 10:25:00
 status: publish
 author: HKL
