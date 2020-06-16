@@ -60,7 +60,7 @@ else
 		}
 		document.getElementById('result').innerHTML=html;
 	}else{
-		document.getElementById('result').innerHTML='No connection';
+		document.getElementById('result').innerHTML='Searching';
 	}
   }
 xmlhttp.open("GET",url,true);
