@@ -140,11 +140,11 @@ main{
 	padding:0 !important
 }
 #nav .separator{
-	color:#333 !important;
+	color:#a2c2ec !important;
 	font-weight:700 !important;
 	margin-bottom:1px;
 	margin-top:1px;
-	background:#F3F8FF;
+	background:#1F1A24;
 	padding:10px 0 10px 10px
 }
 .sidebar{
@@ -162,7 +162,7 @@ main{
 .sidebar li{
 	list-style-type:none;
 	display:block;
-	background:#F3F8FF;
+	background:#332940;
 	margin:0;
 	padding:5px 10px
 }
