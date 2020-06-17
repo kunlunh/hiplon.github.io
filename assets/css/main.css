@@ -3,6 +3,13 @@ body{
 	font:17px Poly, 'Helvetica Neue', Helvetica, serif, Arial !important;
 	letter-spacing:0.001em
 }
+a{
+	color:#bb86fc
+}
+a:hover {
+    color: #bb86cc;
+    text-decoration: underline;
+}
 .footer{
 	height:60px
 }
@@ -22,11 +29,11 @@ main{
 	padding:7px 0 0
 }
 .page-item:hover{
-	background:#F3F8FF;
+	background:#121212;
 	border-radius:.5rem
 }
 .page-item:hover .meta,.page-item:hover .meta a{
-	color:#333
+	color:#888ace
 }
 .page-item-title{
 	list-style:none;
@@ -144,7 +151,7 @@ main{
 	font-weight:700 !important;
 	margin-bottom:1px;
 	margin-top:1px;
-	background:#1F1A24;
+	background:#332940;
 	padding:10px 0 10px 10px
 }
 .sidebar{
@@ -157,12 +164,12 @@ main{
 }
 .sidebar a:hover,.sidebar a:focus{
 	text-decoration:none;
-	color:#333
+	color:#fff
 }
 .sidebar li{
 	list-style-type:none;
 	display:block;
-	background:#332940;
+	background:#1F1A24;
 	margin:0;
 	padding:5px 10px
 }
@@ -191,10 +198,10 @@ ul{
 	font-size:15px !important;
 	cursor:pointer;
 	margin:1px 0;
-	background:#F3F8FF
+	background:#332940
 }
 .goto-top i{
-	color:#333
+	color:#fff
 }
 .goto-top:hover,.goto-top:focus,.goto-top:hover i{
 	color:red
@@ -205,25 +212,31 @@ ul{
 }
 .link:hover,.link:focus{
 	text-decoration:none;
-	color:#333
+	color:#888ace
 }
 #twitter-ic{
 	color:#55acee !important
 }
 #git-ic{
-	color:#333 !important
+	color:#fff !important
+}
+#git-ic:hover{
+	color:#888ace !important
 }
 #rss-ic{
 	color:#ff9933 !important
 }
+#rss-ic:hover{
+	color:#888ace !important
+}
 .top{
 	line-height:40px;
-	background-color:white;
+	background-color:#332940;
 	font-weight:700 !important;
 	padding-left:15px
 }
 .top a{
-	color:#333
+	color:#fff
 }
 .top span a{
 	padding-left:3px
