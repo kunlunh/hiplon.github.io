@@ -224,7 +224,6 @@ ul{
 }
 .top{
 	line-height:40px;
-	background-color:#332940;
 	font-weight:700 !important;
 	padding-left:15px
 }
@@ -604,6 +603,7 @@ pre{
 	padding:0 10px;
 	height:30px;
 	line-height:30px;
+	color:#ddd;
 }
 .pagination a:hover{
 	background:#EEE;
