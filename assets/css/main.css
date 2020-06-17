@@ -3,13 +3,6 @@ body{
 	font:17px Poly, 'Helvetica Neue', Helvetica, serif, Arial !important;
 	letter-spacing:0.001em
 }
-a{
-	color:#bb86fc
-}
-a:hover {
-    color: #bb86cc;
-    text-decoration: underline;
-}
 .footer{
 	height:60px
 }
@@ -108,7 +101,7 @@ main{
 }
 .share{
 	margin-top:60px;
-	background:#F3F8FF;
+	background:#332940;
 	padding:20px;
 	border-radius:.8rem
 }

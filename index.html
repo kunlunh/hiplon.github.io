@@ -11,7 +11,7 @@ layout: default
                 <div class="col-md-8">
                     <ul class="page-item-title">
                         <li><time class="timeago meta" datetime="{{ post.date }}">{{ post.date |  date: "%A %-d %B %Y" }}</time></li>
-                        <li><a class="title" href="{{ post.url }}">{{ post.title }}</a></li>
+                        <li><a class="title text-light" href="{{ post.url }}">{{ post.title }}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 hide-on-phone float-right">
@@ -28,7 +28,7 @@ layout: default
                 <div class="col-md-12 page-item-body">
                     {{ post.content | split:'<!--more-->' | first }}
 					{% if post.content contains '<!--more-->' %}
-					 <p class="more"><a href="{{ post.url }}" title="{{ post.title }}">- 阅读剩余部分 -</a>
+					 <p class="more"><a class="text-light" href="{{ post.url }}" title="{{ post.title }}">- 阅读剩余部分 -</a>
 				    {% endif %}
                 </div>
 			</div>
