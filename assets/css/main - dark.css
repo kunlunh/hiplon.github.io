@@ -2,6 +2,7 @@ body{
 	color:#000;
 	font:17px Poly, 'Helvetica Neue', Helvetica, serif, Arial !important;
 	letter-spacing:0.001em
+	background-color:#1F1B24;
 }
 .footer{
 	height:60px
@@ -124,6 +125,7 @@ main{
 	margin:0 auto -70px;
 	padding:0;
 	position:relative
+	background-color:#121212;
 }
 #wrap .container{
 	max-width:800px !important;
@@ -144,13 +146,14 @@ main{
 	font-weight:700 !important;
 	margin-bottom:1px;
 	margin-top:1px;
-	background:#F3F8FF;
+	background-color:#1F1A24;
 	padding:10px 0 10px 10px
 }
 .sidebar{
 	position:fixed;
 	min-width:139px;
 	padding:0 !important
+	background-color:#1F1A24;
 }
 .sidebar a{
 	font-weight:700 !important
@@ -218,7 +221,7 @@ ul{
 }
 .top{
 	line-height:40px;
-	background-color:white;
+	background-color:#121212;
 	font-weight:700 !important;
 	padding-left:15px
 }
