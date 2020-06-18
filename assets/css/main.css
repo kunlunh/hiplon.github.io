@@ -538,7 +538,7 @@ pre{
 
 .gt-container .gt-header-textarea{
 	color:#f8f9fa !important;
-	background-color:#343a40 !important
+	background-color:#343a40 !important;
 	border:1px solid rgba(255,255,255,.1) !important
 }
 .gt-btn-login{
@@ -571,8 +571,7 @@ pre{
 	color:#ddd;
 }
 .pagination a:hover{
-	color:#fff;
-	background:#bb88ff;
+	background:#4b4b4b;
 	text-decoration:none;
 }
 .pagination .active a{
