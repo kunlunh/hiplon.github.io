@@ -10,6 +10,8 @@ body{
 a:hover{
 	color:#bb88ff !important;
 }
+
+
 main{
 	position:relative
 }
@@ -51,6 +53,13 @@ main{
 }
 .page-item-title .fa-expand{
 	color:#22D722
+}
+.page-item-title a{
+	color:#afafaf !important;
+	font-size:16px;
+}
+.page-item-title a:hover{
+	color:#fff !important
 }
 .page-item-body{
 	display:none
