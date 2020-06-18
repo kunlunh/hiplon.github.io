@@ -6,6 +6,7 @@ body{
 .footer{
 	height:60px
 }
+
 a:hover{
 	color:#bb88ff !important;
 }
@@ -586,4 +587,8 @@ pre{
 
 .table {
 	color:#fff !important;
+}
+
+.post a{
+	color:#bb86fc;
 }
