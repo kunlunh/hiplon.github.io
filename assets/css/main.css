@@ -28,6 +28,10 @@ main{
 .page-item:hover .meta,.page-item:hover .meta a{
 	color:#888ace
 }
+
+.meta a:hover{
+	color:#fff
+}
 .page-item-title{
 	list-style:none;
 	padding:0
@@ -229,6 +233,9 @@ ul{
 }
 .top a{
 	color:#fff
+}
+.top a:hover{
+	color:#888ace
 }
 .top span a{
 	padding-left:3px
