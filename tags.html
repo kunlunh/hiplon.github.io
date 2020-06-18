@@ -3,7 +3,7 @@ layout: default
 title: Tags
 ---
 <h2>Tags</h2>
-<div id="tags-list">
+
 {% capture temptags %}
   {% for tag in site.tags %}
     {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
@@ -15,4 +15,3 @@ title: Tags
   {% capture tagname %}{{ tagitems[1] }}{% endcapture %}
   <a href="/tag/{{ tagname }}/"><code class="text-light highligher-rouge"><nobr>{{ tagname }}</nobr></code></a>
 {% endfor %}
-<div/>

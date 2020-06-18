@@ -530,7 +530,18 @@ pre{
 	border-top:2px solid #000;
 }
 .gt-container .gt-header-textarea:hover{
-	background-color:#bb86fc !important
+	background-color:#343a40 !important
+}
+
+.gt-container .gt-header-textarea{
+	color:#f8f9fa !important;
+	background-color:#343a40 !important
+}
+.gt-btn-login{
+	background-color:#6c757d !important
+}
+.gt-ico-text{
+	color: #bb86fc !important;
 }
 
 .pagination{
@@ -551,7 +562,7 @@ pre{
 	color:#ddd;
 }
 .pagination a:hover{
-	background:#121212;
+	background:#bb88ff;
 	text-decoration:none;
 }
 .pagination .active a{
@@ -565,5 +576,5 @@ pre{
 }
 
 .table {
-	color:#fff;
+	color:#fff !important;
 }
