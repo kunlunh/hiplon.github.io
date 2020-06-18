@@ -571,6 +571,7 @@ pre{
 	color:#ddd;
 }
 .pagination a:hover{
+	color:#fff;
 	background:#bb88ff;
 	text-decoration:none;
 }
