@@ -54,11 +54,11 @@ main{
 .page-item-title .fa-expand{
 	color:#22D722
 }
-.page-item-title .float-right a{
+.page-item-title.float-right a{
 	color:#afafaf !important;
 	font-size:16px;
 }
-.page-item-title .float-right a:hover{
+.page-item-title.float-right a:hover{
 	color:#fff !important
 }
 .page-item-body{
