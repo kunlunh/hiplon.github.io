@@ -76,7 +76,7 @@ main{
 	border-bottom:1px solid #eee;
 }
 .page-content a{
-	color:#bb86fc
+	color:#5E81AC
 }
 .page-content img{
 	max-width: 100%;
@@ -590,7 +590,7 @@ pre{
 }
 
 .page-item a {
-  color: #bb86fc;
+  color: #5E81AC;
   text-decoration: none;
 }
 
@@ -599,5 +599,5 @@ pre{
 }
 
 .post a{
-	color:#bb86fc;
+	color:#5E81AC;
 }
