@@ -10,7 +10,6 @@ permalink: /:year/:month/:title/
 owner:
     name: HKL
 
-
 paginate: 7
 paginate_path: "page/:num"
 
