@@ -8,7 +8,7 @@ body{
 }
 
 a:hover{
-	color:#bb88ff !important;
+	color:#917d11 !important;
 }
 
 
@@ -555,13 +555,16 @@ pre{
 	background-color:#6c757d !important
 }
 .gt-ico-text{
-	color: #bb86fc !important;
+	color: #5E81AC !important;
 }
 .gt-link-counts{
-	color: #bb86fc !important;
+	color: #5E81AC !important;
 }
 .gt-svg{
 	fill: #fff !important;
+}
+.gt-popup{
+	background-color:#6f7777 !important
 }
 .pagination{
 	list-style:none;
