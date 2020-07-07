@@ -14,6 +14,8 @@ tags:
 
 本文主要实现在OpenWRT路由器配置Webdav(s)共享文件，主要通过lighttpd
 
+lighttpd版本的webdav可能有些webdav方法不一定支持，需要全功能的webdav可以参考另外一篇用openwrt-apache做的webdav服务器 [/2020/05/openwrt-apache-webdavs/](/2020/05/openwrt-apache-webdavs/)
+
 （1）安装相关软件
 
 ```bash
