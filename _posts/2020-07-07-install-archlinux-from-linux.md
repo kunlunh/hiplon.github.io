@@ -12,7 +12,7 @@ tags:
   - Operating
 ---
 
-以Oracle Cloud环境为例，从现有Linux系统上安装Archlinux
+以Oracle Cloud环境为例，从现有Linux系统上安装Archlinux [理论上可以无VNC实现]
 
 以Oracle Cloud环境为例,启用一个Oracle Linux 7.8的实例,opc登陆系统,`sudo -i`切换为root用户。继续后续操作：
 
@@ -163,5 +163,10 @@ initrdefi  /initramfs-linux
 
 [root@archlinux ~]# 
 ```
+
+## Update:
+
+### 试了下efi的ubuntu镜像的话最后一步直接 grub-mkconfig -o /boot/grub/grub.cfg 覆盖掉原来的grub配置文件即可
+
 
 
