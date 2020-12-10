@@ -53,7 +53,7 @@ password zebra
 !
 interface br-lan
 !
-interface tincn0
+interface n2ntun0
 !
 router ospf
  ospf router-id 10.1.0.5
