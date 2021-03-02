@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+    <div class="page">
+		{% if paginator.total_pages > 1 %}
+        {% for post in paginator.posts %}
+
+        <div class="page-item col-md-12">
+			<div class="row">
+                <div class="col-md-8">
+                    <ul class="page-item-title">
+                        <li><time class="timeago meta" datetime="{{ post.date }}">{{ post.date |  date: "%A %-d %B %Y" }}</time></li>
+                        <li><a class="title text-light" href="{{ post.url }}">{{ post.title }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 hide-on-phone float-right">
+                    <ul class="page-item-title float-right meta">
+                        <li><a href="{{ post.url }}#comment">
+                         评论<i class="fa fa-commenting-o"></i></a></li>
+                        <li><a href="{{ post.url }}">全文 <i class="fa fa-ellipsis-h"></i></a></li>
+                        <li><a class="pib-indicator">预览 <i class="fa fa-expand"></i></a>
+                        </li>
+                    </ul>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col-md-12 page-item-body">
+                    {{ post.content | split:'<!--more-->' | first }}
+					{% if post.content contains '<!--more-->' %}
+					 <p class="more"><a class="text-light" href="{{ post.url }}" title="{{ post.title }}">- 阅读剩余部分 -</a>
+				    {% endif %}
+                </div>
+			</div>
+        </div>
+        {% endfor %}
+      {% endif %}
+      
+<div class="pagination">
+<li><a href="/">《</a></li>
+{% if paginator.page > 2 %}
+<li><a href="/page/{{paginator.previous_page}}/"><</a></li>
+{% endif %}
+{% assign pageSize = 5 %}
+{% assign startPage = paginator.page | minus:pageSize %}
+{% if 2 > startPage %}
+{% assign startPage = 2 %}
+{% endif %}
+{% assign endPage = paginator.page | plus:pageSize %}
+{% if endPage >= paginator.total_pages %}
+{% assign endPage = paginator.total_pages | minus:1 %}
+{% endif %}
+{% for count in (startPage..endPage) %}
+{% if count == paginator.page %}
+<li><a href="#"><span class="current-page">{{count}}</span></a></li>
+{% else %}
+<li><a href="/page/{{count}}/">{{count}}</a></li>
+{% endif %}
+{% endfor %}
+{% if paginator.next_page %}
+<li><a href="/page/{{paginator.next_page}}/">></a></li>
+{% endif %}
+<li><a href="/page/{{paginator.total_pages}}/">》</a></li>
+<li><a href="#">{{paginator.page}} / {{paginator.total_pages}}</a></li>
+</div>
+
+
+    </div>
+
+<script>
+	function closest(el, selector) {
+	  const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
+
+	  while (el) {
+		if (matchesSelector.call(el, selector)) {
+		  return el;
+		} else {
+		  el = el.parentElement;
+		}
+	  }
+	  return null;
+	}
+	var superToggle = function(element, class0, class1) {
+	  element.classList.toggle(class0);
+	  element.classList.toggle(class1);
+	}
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		var pib = document.getElementsByClassName('pib-indicator');
+		document.getElementsByClassName('page-item-body')[0].style.display = 'block';
+		superToggle(pib[0].getElementsByClassName('fa')[0],'fa-compress', 'fa-expand');
+		var count = 0;
+		for (count ; count < pib.length; count++) {
+			pib[count].addEventListener("click", function() {
+				superToggle(this.getElementsByClassName('fa')[0],'fa-expand', 'fa-compress');
+				//var el = this.closest('.page-item').querySelectorAll('.page-item-body')[0];  //no ie support 
+				var el = closest(this,'.page-item').getElementsByClassName('page-item-body')[0];   //support ie10+
+				if (el.style.display === "none" || el.style.display == "") {
+					el.style.display = "block";
+				  } else {
+					el.style.display = "none";
+				  }	
+			});
+		}
+	});
+</script>
