@@ -17,7 +17,7 @@ tags:
 
 <!--more-->
 
-安装对应kerner mod
+安装对应kernel mod
 ```bash
 root@OpenWrt:~# opkg install kmod-nf-nathelper-extra
 root@OpenWrt:~# opkg install kmod-nf-ipvs-ftp
