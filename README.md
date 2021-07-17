@@ -1,15 +1,19 @@
-### hiplon.github.io
+### AKA [hiplon.github.io](https://hiplon.github.io) 
 
 ---
 
 #### 介绍
 
-BLOG: [VNF.CC](https://VNF.CC) 
+BLOG: [VNF.CC](https://vnf.cc) 
+
+C.V. [HKL.AC.CN](https://hkl.ac.cn) 
 
 
 #### Welcome!
+
+My Github: [github.com/hiplon](https://github.com/hiplon)
 		
-My Linkedin: [www.linkedin.com/in/huangkunlun](https://www.linkedin.com/in/huangkunlun)
+My Linkedin: [linkedin.com/in/huangkunlun](https://www.linkedin.com/in/huangkunlun)
 
 
 Guangzhou,China
